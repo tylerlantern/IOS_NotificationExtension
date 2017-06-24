@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import DemoPushNotification
 
 class DemoPushNotificationTests: XCTestCase {
     

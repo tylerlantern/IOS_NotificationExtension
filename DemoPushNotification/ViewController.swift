@@ -7,19 +7,28 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var myTitle: UILabel!
+    @IBOutlet weak var myBody: UILabel!
+    var payloadNotificationViewModel : PayloadNotificationViewModel? {
+        didSet {
+            if let payload = payloadNotificationViewModel {
+                myTitle.text = payload.title
+                myBody.text = payload.body
+                myImage.image = payload.attachedImage
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 

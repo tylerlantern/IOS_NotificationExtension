@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotificationService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>BE1C67521EFCCF4B00163043</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE1C676B1EFCF24300163043</key>
 		<dict>
 			<key>primary</key>
 			<true/>
